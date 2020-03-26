@@ -104,11 +104,11 @@ int route_card_init(void **pproute_data, int card)
 }
 
 /**
- * @brief get_route_config 
+ * @brief get_route_config
  *
  * @param route
  *
- * @returns 
+ * @returns
  */
 const struct config_route *get_route_config(void *proute_data, unsigned route)
 {
@@ -205,7 +205,7 @@ const struct config_route *get_route_config(void *proute_data, unsigned route)
 }
 
 /**
- * @brief set_controls 
+ * @brief set_controls
  *
  * @param mixer
  * @param ctls
@@ -258,11 +258,11 @@ int set_controls(struct mixer *mixer, const struct config_control *ctls, const u
 }
 
 /**
- * @brief route_set_controls 
+ * @brief route_set_controls
  *
  * @param route
  *
- * @returns 
+ * @returns
  */
 int route_set_controls(void *proute_data, unsigned route)
 {
@@ -326,7 +326,7 @@ void route_uninit(void *proute_data)
 }
 
 /**
- * @brief is_playback_route 
+ * @brief is_playback_route
  *
  * @param route
  *
@@ -469,11 +469,11 @@ __exit:
 }
 
 /**
- * @brief route_pcm_close 
+ * @brief route_pcm_close
  *
  * @param route
  *
- * @returns 
+ * @returns
  */
 int route_pcm_close(void *proute_data, unsigned route)
 {
