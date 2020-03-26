@@ -1,0 +1,20 @@
+cc_binary {
+    name: "audiodev_test",
+    srcs: [
+        "codec_main.c",
+        "codec_test.c",
+        "audio_hw.c",
+        "alsa_route.c",
+        "alsa_mixer.c",
+        "tinyalsa/mixer.c",
+        "tinyalsa/pcm.c",
+    ],
+    shared_libs: [
+        "libbase",
+        "libcrypto",
+        "libcutils",
+        "liblog",
+        "libziparchive",
+    ],
+    cflags: ["-Wno-error"],
+}
